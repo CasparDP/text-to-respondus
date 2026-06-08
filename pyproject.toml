@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "text-to-respondus"
+version = "0.1.0"
+description = "Convert text-based quiz files to Respondus CSV format for easy import"
+authors = ["CasparDP"]
+readme = "README.md"
+packages = [{include = "text_to_respondus", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0"
+pandas = "^2.0.0"
+click = "^8.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+black = "^23.0.0"
+flake8 = "^6.0.0"
+mypy = "^1.0.0"
+
+[tool.poetry.scripts]
+text-to-respondus = "text_to_respondus.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true

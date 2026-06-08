@@ -1,0 +1,28 @@
+Quiz title: Example Quiz
+Quiz description: A small, generic sample showing the input format the converter expects. Replace this with your own quiz file.
+
+Title: World Capitals
+Points: 1
+1. What is the capital of France?
+... The asterisk before an option marks it as the correct answer. The line starting with "..." is an optional explanation that is preserved as feedback in the output.
+a) London
+*b) Paris
+c) Berlin
+d) Madrid
+
+Title: Planets
+Points: 1
+2. Which planet is closest to the Sun?
+... Questions can have between 2 and 10 answer options.
+*a) Mercury
+b) Venus
+c) Earth
+d) Mars
+
+Title: Arithmetic
+Points: 2
+3. What is 7 multiplied by 6?
+a) 36
+b) 40
+*c) 42
+d) 48
