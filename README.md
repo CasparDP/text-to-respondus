@@ -16,6 +16,7 @@ A Python tool to convert Canvas-style quiz text files into Respondus CSV format 
 - **🖥️ CLI Interface**: User-friendly command line interface
 - **🐍 Python API**: Programmatic access for advanced users
 - **✅ Validation**: Built-in validation and error checking
+- **🤖 AI Agent Skill**: Convert quizzes in plain language, no CLI needed
 
 ## 🚀 Quick Start
 
@@ -54,6 +55,18 @@ poetry run text-to-respondus convert data/example_quiz.txt output/example_respon
 ```bash
 poetry run text-to-respondus batch data/ output/
 ```
+
+## 🤖 Use with an AI agent (no CLI needed)
+
+This repo includes a skill at `.claude/skills/text-to-respondus/` so you can
+convert quizzes by just asking an AI coding agent in plain language:
+
+> "Here are my quiz questions, make a Respondus CSV for ANS."
+
+The agent formats your questions into the input format and runs the converter
+for you. Claude Code, the Claude Agent SDK, and claude.ai load the skill
+automatically when you open this repo; other agents can read the same
+[`SKILL.md`](.claude/skills/text-to-respondus/SKILL.md) as instructions.
 
 ## 📋 Input Format
 
